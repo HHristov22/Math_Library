@@ -1,5 +1,5 @@
 
-Basic Arithmetic operations class for python
+Basic arithmetic operations class for python
 =======================
 
 Overview
