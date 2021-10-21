@@ -7,7 +7,6 @@ class MyMathTests(unittest.TestCase):
 
     def setUp(self):
         self.MyMath = MyMath()
-        self.ZeroDivisionError = ZeroDivisionError()
 
     def tearDown(self):
         del self.MyMath
@@ -116,17 +115,16 @@ class MyMathTests(unittest.TestCase):
         self.assertEqual(-6, self.MyMath.division_two_numbers(-24, 4))
 
     def  test_division_positve_zero(self):
-        with self.assertRaises(self.ZeroDivisionError('Second input is 0. You can\'t divide by 0.')):
-             self.MyMath.division_two_numbers(5, 0)
+        with self.assertRaises(ZeroDivisionError):
+            self.MyMath.division_two_numbers(5,0)
 
-    # WIP
-    # def  test_division_negative_zero(self):
-    #     self.assertEqual(self.MyMath.division_two_numbers(-5, 0))
+    def  test_division_negative_zero(self):
+        with self.assertRaises(ZeroDivisionError):
+            self.MyMath.division_two_numbers(-5,0)
 
-    # def  test_division_zero_zero(self):
-    #     self.assertEqual(0, self.MyMath.division_two_numbers(0, 0))
-
-        # self.assertRaises CHECK IT
+    def  test_division_zero_zero(self):
+        with self.assertRaises(ZeroDivisionError):
+            self.MyMath.division_two_numbers(0,0)
 
 
 if __name__ == '__main__':
