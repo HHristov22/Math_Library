@@ -1,5 +1,5 @@
 
-Basic arithmetic operations class for python
+Basic Arithmetic operations class for python
 =======================
 
 Overview
@@ -18,39 +18,44 @@ Operations:
  
 |Operation  | Description                 | Example     | Results     |
 |:----------: | :--------------------------:  | :------------:| :------------:|
-|    +      | addition             | 2 + 7 = 9   | integer |
-|    −      | subtraction         | 9 - 2 = 7   | integer |
-|    *      | multiplication      | 2 * 7 = 14  | integer|
+|    +      | addition             | 1 + 2 = 3   | integer |
+|    −      | subtraction         | 5 - 1 = 4   | integer |
+|    *      | multiplication      | 2 * 9 = 18  | integer|
 |    ÷      | division          | 9 / 2 = 4.5 | double|
 
 Usage
 ---------------------
 
-<pre>
+```python
 # import MyMath from math_lib module
 
 from math_lib import MyMath
 self.MyMath = MyMath()
 
-# add 2 and 7
-print my_math.add(2, 7)
+# Add two numbers.
+print MyMath.addition_two_numbers(1, 2)
 
-# subtract 9 from 2
-print my_math.sub(9, 2)
+# Subtraction of two numbers.
+print MyMath.subtraction_two_numbers(5, 1)
 
-# multiply 2 by 7
-print my_math.mul(2, 7)
+# Multiplication of two numbers.
+print MyMath.multiplication_two_numbers(2, 9)
 
-# divide 9 by 2
-print operation.div(9, 2)   
-</pre>
+# Division of two numbers.
+print MyMath.division_two_numbers(9, 2) 
+```  
 
 Test
 ---------------------
-<pre>
+``` powershell
 $ py tests.py -v
 
-WIP
+.py
+....................................
+----------------------------------------------------------------------
+Ran 36 tests in 0.003s
 
 OK
-</pre>
+
+OK
+```
