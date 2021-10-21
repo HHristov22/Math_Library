@@ -12,11 +12,7 @@ def is_integer(var):
     """
     Check the var is integer
     """
-    if type(var) != int:
-        return False
-    else:
-        return True
-
+    return type(var) != int
 
 class MyMath:
     """
@@ -71,8 +67,9 @@ class MyMath:
         Input Y: (int type)
         Return: X / Y (double type)
         """
+        invalid_diviider = 0
         if is_integer(x) and is_integer(y):
-            if y == 0:
+            if y == invalid_diviider:
                 raise ZeroDivisionError(
                     'Second input is 0. You can\'t divide by 0.')
             else:
