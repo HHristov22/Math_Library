@@ -32,7 +32,7 @@ Usage
 from math_lib import MyMath
 self.MyMath = MyMath()
 
-# Add two numbers.
+# Аddition of two numbers.
 print MyMath.addition_two_numbers(1, 2)
 
 # Subtraction of two numbers.
