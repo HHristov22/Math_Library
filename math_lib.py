@@ -40,7 +40,7 @@ class MyMath:
 
     def subtraction_two_numbers(self, x, y) -> int:
         """
-        Add two numbers.
+        Subtraction of two numbers.
         Input: X: (int type)
         Input Y: (int type)
         Return: X + Y (int type)
@@ -53,7 +53,7 @@ class MyMath:
 
     def multiplication_two_numbers(self, x, y) -> int:
         """
-        Subtraction of two numbers.
+        Multiplication of two numbers.
         Input: X: (int type)
         Input Y: (int type)
         Return: X * Y (int type)
@@ -80,22 +80,3 @@ class MyMath:
         else:
             raise InvalidType(
                 'The input is invalid. Input needs to be integer.')
-
-
-"""
-import unittest
-
-def t():
-    return 9/0
-
-class TestT(unittest.TestCase):
-    def setUp(self):
-        self.t = t()
-
-    def tearDown(self):
-        del self.t
-
-    def test_t():
-        # with self.assertRaises(ZeroDivisionError):
-        #     t()
-        self.assertEqual(7, self.t())"""
