@@ -23,7 +23,7 @@ class MyMath:
 
     def addition_two_numbers(self, x, y) -> int:
         """
-        Add two numbers.
+        Аddition of two numbers.
         Input: X: (int type)
         Input Y: (int type)
         Return: X + Y (int type)
